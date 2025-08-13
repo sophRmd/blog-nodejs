@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
+<%- include('./parciais/header.ejs')%>
 <body>
-    <nav>
-        <div class="titulo-site">
-            <a href="/"><h1>Blog</h1></a>
-            <p>Criar</p>
-        </div>
-        <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/blog/criar">Novo Blog</a></li>
-        </ul>
-    </nav>
+    <%- include('./parciais/nav.ejs') %>
 
     <div class="criar-conteudo-blog">
         <form>
-            <label for="titulo"> Titulo do Blog</label>
-            <input type="text" id="titulo" required>
-            <label for="texto-curto">Texto curto do blog</label>
-            <input type="text" id="texto-curto" required>
-            <label for="conteudo">Conteúdo do Blog</label>
-            <textarea id="conteudo" required></textarea>
+            <label for="titulo"> Titulo do Blog</label><br>
+            <input type="text" id="titulo" required><br>
+            <label for="texto-curto">Texto Curto do Blog</label><br>
+            <input type="text" id="texto-curto" required><br>
+            <label for="conteudo">Conteúdo do Blog</label><br>
+            <textarea id="conteudo" required></textarea><br>
             <button>Enviar</button>
         </form>
     </div>
-
+    <%- include('./parciais/footer.ejs')%>
 </body>
 </html>
